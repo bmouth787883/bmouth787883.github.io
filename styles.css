@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f7f7f7, #ffffff);
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+.section {
+    max-width: 700px;
+    margin: 2em auto;
+    padding: 1em;
+    text-align: left;
+}
+
+.section h2 {
+    color: #007aff;
+    margin-bottom: 0.5em;
+}
+
+.section ul {
+    padding-left: 1.2em;
+}
+
+.section ul li {
+    margin-bottom: 0.5em;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+}
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #666;
+}
+.tagline {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 2em;
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    background: url('https://avatars.githubusercontent.com/u/9919?s=200&v=4') no-repeat center/cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: scaleIn 0.8s ease-out;
+}
+.btn {
+    display: inline-block;
+    padding: 0.6em 1.4em;
+    font-size: 1em;
+    color: white;
+    background-color: #007aff;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #005ecb;
+}
+footer {
+    position: fixed;
+    bottom: 10px;
+    font-size: 0.85em;
+    color: #aaa;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2em;
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+}
+
+.info-block {
+    flex: 1 1 400px;
+    min-width: 280px;
+}
+
+.info-block h2 {
+    color: #007aff;
+    margin-bottom: 0.5em;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
